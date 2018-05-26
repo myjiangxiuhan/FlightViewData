@@ -76,7 +76,9 @@
               "ClientApp/styles.css",
               "node_modules/element-angular/theme/index.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/echarts/dist/echarts.min.js"
+            ],
             "assets": [
               "ClientApp/favicon.ico",
               "ClientApp/assets"
