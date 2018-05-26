@@ -3,6 +3,9 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="ClientApp\app\components\public" />
+    <Folder Include="ClientApp\app\models" />
+    <Folder Include="ClientApp\app\services" />
     <Folder Include="Database" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
