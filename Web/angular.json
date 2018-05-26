@@ -23,9 +23,12 @@
               "ClientApp/assets"
             ],
             "styles": [
-              "ClientApp/styles.css"
+              "ClientApp/styles.css",
+              "node_modules/element-angular/theme/index.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/echarts/dist/echarts.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -73,12 +76,9 @@
             "tsConfig": "ClientApp/tsconfig.spec.json",
             "karmaConfig": "ClientApp/karma.conf.js",
             "styles": [
-              "ClientApp/styles.css",
-              "node_modules/element-angular/theme/index.css"
+              "ClientApp/styles.css"
             ],
-            "scripts": [
-              "node_modules/echarts/dist/echarts.min.js"
-            ],
+            "scripts": [],
             "assets": [
               "ClientApp/favicon.ico",
               "ClientApp/assets"
