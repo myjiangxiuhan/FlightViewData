@@ -1,0 +1,11 @@
+C:\Users\Administrator\RiderProjects\FlightViewData\FlightViewData\bin\Debug\netcoreapp2.0\FlightViewData.deps.json
+C:\Users\Administrator\RiderProjects\FlightViewData\FlightViewData\bin\Debug\netcoreapp2.0\FlightViewData.runtimeconfig.json
+C:\Users\Administrator\RiderProjects\FlightViewData\FlightViewData\bin\Debug\netcoreapp2.0\FlightViewData.runtimeconfig.dev.json
+C:\Users\Administrator\RiderProjects\FlightViewData\FlightViewData\bin\Debug\netcoreapp2.0\FlightViewData.dll
+C:\Users\Administrator\RiderProjects\FlightViewData\FlightViewData\bin\Debug\netcoreapp2.0\FlightViewData.pdb
+C:\Users\Administrator\RiderProjects\FlightViewData\FlightViewData\obj\Debug\netcoreapp2.0\FlightViewData.csprojAssemblyReference.cache
+C:\Users\Administrator\RiderProjects\FlightViewData\FlightViewData\obj\Debug\netcoreapp2.0\FlightViewData.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\RiderProjects\FlightViewData\FlightViewData\obj\Debug\netcoreapp2.0\FlightViewData.AssemblyInfoInputs.cache
+C:\Users\Administrator\RiderProjects\FlightViewData\FlightViewData\obj\Debug\netcoreapp2.0\FlightViewData.AssemblyInfo.cs
+C:\Users\Administrator\RiderProjects\FlightViewData\FlightViewData\obj\Debug\netcoreapp2.0\FlightViewData.dll
+C:\Users\Administrator\RiderProjects\FlightViewData\FlightViewData\obj\Debug\netcoreapp2.0\FlightViewData.pdb
