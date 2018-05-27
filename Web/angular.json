@@ -23,8 +23,7 @@
               "ClientApp/assets"
             ],
             "styles": [
-              "ClientApp/styles.css",
-              "node_modules/element-angular/theme/index.css"
+              "ClientApp/styles.css"
             ],
             "scripts": [
               "node_modules/echarts/dist/echarts.min.js"

@@ -1,9 +1,11 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
-import {AppComponent} from './components/app.component';
-import {ElModule} from "element-angular/release/element-angular.module";
+import {AppComponent} from './app.component';
 import {NgxEchartsModule} from "ngx-echarts";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {MatSidenavModule, MatToolbarModule} from "@angular/material";
+
 
 @NgModule({
   declarations: [
@@ -11,9 +13,10 @@ import {NgxEchartsModule} from "ngx-echarts";
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     NgxEchartsModule,
-    ElModule.forRoot()
-
+    MatToolbarModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
