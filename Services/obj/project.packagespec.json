@@ -1,17 +1,30 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\Administrator\\RiderProjects\\FlightViewData\\Services\\Services.csproj",
+    "projectUniqueName": "E:\\Web\\Rider\\FlightViewData\\Services\\Services.csproj",
     "projectName": "Services",
-    "projectPath": "C:\\Users\\Administrator\\RiderProjects\\FlightViewData\\Services\\Services.csproj",
-    "outputPath": "C:\\Users\\Administrator\\RiderProjects\\FlightViewData\\Services\\obj\\",
+    "projectPath": "E:\\Web\\Rider\\FlightViewData\\Services\\Services.csproj",
+    "outputPath": "E:\\Web\\Rider\\FlightViewData\\Services\\obj\\",
     "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
     "originalTargetFrameworks": [
       "netcoreapp2.0"
     ],
     "frameworks": {
       "netcoreapp2.0": {
-        "projectReferences": {}
+        "projectReferences": {
+          "E:\\Web\\Rider\\FlightViewData\\Contexts\\Contexts.csproj": {
+            "projectPath": "E:\\Web\\Rider\\FlightViewData\\Contexts\\Contexts.csproj"
+          },
+          "E:\\Web\\Rider\\FlightViewData\\Models\\Models.csproj": {
+            "projectPath": "E:\\Web\\Rider\\FlightViewData\\Models\\Models.csproj"
+          },
+          "E:\\Web\\Rider\\FlightViewData\\Tools\\Tools.csproj": {
+            "projectPath": "E:\\Web\\Rider\\FlightViewData\\Tools\\Tools.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -23,6 +36,14 @@
   "frameworks": {
     "netcoreapp2.0": {
       "dependencies": {
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[2.1.0, )"
+        },
+        "Microsoft.EntityFrameworkCore.Sqlite": {
+          "target": "Package",
+          "version": "[2.1.0, )"
+        },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",

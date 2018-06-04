@@ -1,0 +1,12 @@
+.container{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.header-title{
+  margin-left: 15px;
+}
+.herader-btn-menu{
+  min-width: 60px;
+}

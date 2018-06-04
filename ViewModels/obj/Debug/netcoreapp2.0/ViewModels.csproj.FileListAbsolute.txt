@@ -1,0 +1,9 @@
+E:\Web\Rider\FlightViewData\ViewModels\bin\Debug\netcoreapp2.0\ViewModels.deps.json
+E:\Web\Rider\FlightViewData\ViewModels\bin\Debug\netcoreapp2.0\ViewModels.dll
+E:\Web\Rider\FlightViewData\ViewModels\bin\Debug\netcoreapp2.0\ViewModels.pdb
+E:\Web\Rider\FlightViewData\ViewModels\obj\Debug\netcoreapp2.0\ViewModels.csprojAssemblyReference.cache
+E:\Web\Rider\FlightViewData\ViewModels\obj\Debug\netcoreapp2.0\ViewModels.csproj.CoreCompileInputs.cache
+E:\Web\Rider\FlightViewData\ViewModels\obj\Debug\netcoreapp2.0\ViewModels.AssemblyInfoInputs.cache
+E:\Web\Rider\FlightViewData\ViewModels\obj\Debug\netcoreapp2.0\ViewModels.AssemblyInfo.cs
+E:\Web\Rider\FlightViewData\ViewModels\obj\Debug\netcoreapp2.0\ViewModels.dll
+E:\Web\Rider\FlightViewData\ViewModels\obj\Debug\netcoreapp2.0\ViewModels.pdb

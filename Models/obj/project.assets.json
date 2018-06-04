@@ -664,17 +664,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\RiderProjects\\FlightViewData\\Models\\Models.csproj",
+      "projectUniqueName": "E:\\Web\\Rider\\FlightViewData\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "C:\\Users\\Administrator\\RiderProjects\\FlightViewData\\Models\\Models.csproj",
+      "projectPath": "E:\\Web\\Rider\\FlightViewData\\Models\\Models.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\RiderProjects\\FlightViewData\\Models\\obj\\",
+      "outputPath": "E:\\Web\\Rider\\FlightViewData\\Models\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],

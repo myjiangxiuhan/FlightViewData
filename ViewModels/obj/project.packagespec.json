@@ -1,11 +1,14 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\Administrator\\RiderProjects\\FlightViewData\\ViewModels\\ViewModels.csproj",
+    "projectUniqueName": "E:\\Web\\Rider\\FlightViewData\\ViewModels\\ViewModels.csproj",
     "projectName": "ViewModels",
-    "projectPath": "C:\\Users\\Administrator\\RiderProjects\\FlightViewData\\ViewModels\\ViewModels.csproj",
-    "outputPath": "C:\\Users\\Administrator\\RiderProjects\\FlightViewData\\ViewModels\\obj\\",
+    "projectPath": "E:\\Web\\Rider\\FlightViewData\\ViewModels\\ViewModels.csproj",
+    "outputPath": "E:\\Web\\Rider\\FlightViewData\\ViewModels\\obj\\",
     "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
     "originalTargetFrameworks": [
       "netcoreapp2.0"
     ],
