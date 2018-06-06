@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 using Services;
+using ViewModels;
 
 namespace Web.Controllers.Admin
 {
@@ -18,11 +19,18 @@ namespace Web.Controllers.Admin
         }
 
         [HttpGet("all")]
-        public async Task<IEnumerable<Airport>> AllTask()
+        public async Task<IEnumerable<Airport>> AllAsync()
         {
             return await _airportService.AllAsync();
         }
-
+        [HttpPost("list")]
+        public async Task<IEnumerable<Airport>> ListAsync([FromBody] ListViewModel module)
+        {
+            if (module.PageIndex <= 0) module.PageIndex = 1;
+            if (module.PageSize <= 0) module.PageSize = 10;
+            if (module.Sort != "id" && module.Sort != "id_desc") module.Sort = null;
+            return await _airportService.ListAsync(module.PageSize, module.PageIndex, module.Sort, module.Filter);
+        }
         [HttpGet("updata")]
         public async Task<int> UpdataTask()
         {

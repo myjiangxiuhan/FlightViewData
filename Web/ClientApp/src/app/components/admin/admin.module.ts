@@ -3,13 +3,19 @@ import {CommonModule} from '@angular/common';
 import {AirportComponent} from './airport/airport.component';
 import {FlightComponent} from './flight/flight.component';
 import {AdminRoutingModule} from "./admin-routing.module";
-import {MatTableModule} from "@angular/material";
+import {MatFormFieldModule, MatInputModule, MatPaginatorModule, MatSortModule, MatTableModule} from "@angular/material";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   imports: [
     CommonModule,
+    HttpClientModule,
     AdminRoutingModule,
-    MatTableModule
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   declarations: [AirportComponent, FlightComponent]
 })

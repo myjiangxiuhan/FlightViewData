@@ -1,60 +1,33 @@
-<table mat-table style="width: 100%"[dataSource]="data">
-  <ng-container matColumnDef="id">
-    <th mat-header-cell *matHeaderCellDef>Id</th>
-    <td mat-cell *matCellDef="let airport">{{airport.id}}</td>
-  </ng-container>
-  <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef>Name</th>
-    <td mat-cell *matCellDef="let airport">{{airport.Name}}</td>
-  </ng-container>
-  <ng-container matColumnDef="city">
-    <th mat-header-cell *matHeaderCellDef>City</th>
-    <td mat-cell *matCellDef="let airport">{{airport.City}}</td>
-  </ng-container>
-  <ng-container matColumnDef="couutry">
-    <th mat-header-cell *matHeaderCellDef>Couutry</th>
-    <td mat-cell *matCellDef="let airport">{{airport.Couutry}}</td>
-  </ng-container>
-  <ng-container matColumnDef="iata">
-    <th mat-header-cell *matHeaderCellDef>Iata</th>
-    <td mat-cell *matCellDef="let airport">{{airport.Iata}}</td>
-  </ng-container>
-  <ng-container matColumnDef="icao">
-    <th mat-header-cell *matHeaderCellDef>Icao</th>
-    <td mat-cell *matCellDef="let airport">{{airport.Icao}}</td>
-  </ng-container>
-  <ng-container matColumnDef="latitude">
-    <th mat-header-cell *matHeaderCellDef>Latitude</th>
-    <td mat-cell *matCellDef="let airport">{{airport.Latitude}}</td>
-  </ng-container>
-  <ng-container matColumnDef="longitude">
-    <th mat-header-cell *matHeaderCellDef>Longitude</th>
-    <td mat-cell *matCellDef="let airport">{{airport.Longitude}}</td>
-  </ng-container>
-  <ng-container matColumnDef="altitude">
-    <th mat-header-cell *matHeaderCellDef>Altitude</th>
-    <td mat-cell *matCellDef="let airport">{{airport.Altitude}}</td>
-  </ng-container>
-  <ng-container matColumnDef="timezone">
-    <th mat-header-cell *matHeaderCellDef>Timezone</th>
-    <td mat-cell *matCellDef="let airport">{{airport.Timezone}}</td>
-  </ng-container>
-  <ng-container matColumnDef="dst">
-    <th mat-header-cell *matHeaderCellDef>Dst</th>
-    <td mat-cell *matCellDef="let airport">{{airport.Dst}}</td>
-  </ng-container>
-  <ng-container matColumnDef="tz">
-    <th mat-header-cell *matHeaderCellDef>Tz</th>
-    <td mat-cell *matCellDef="let airport">{{airport.Tz}}</td>
-  </ng-container>
-  <ng-container matColumnDef="type">
-    <th mat-header-cell *matHeaderCellDef>Type</th>
-    <td mat-cell *matCellDef="let airport">{{airport.Type}}</td>
-  </ng-container>
-  <ng-container matColumnDef="source">
-    <th mat-header-cell *matHeaderCellDef>Source</th>
-    <td mat-cell *matCellDef="let airport">{{airport.Source}}</td>
-  </ng-container>
-  <tr mat-header-row *matHeaderRowDef="AirportColumns"></tr>
-  <tr mat-row *matRowDef="let airport; columns: AirportColumns"></tr>
-</table>
+<div class="content">
+  <mat-form-field class="input-full">
+    <input matInput placeholder="搜索">
+  </mat-form-field>
+  <div class="table-content">
+    <table mat-table style="width: 100%"[dataSource]="data" matSort>
+      <ng-container  matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>机场ID</th>
+        <td mat-cell *matCellDef="let airport">{{airport.id}}</td>
+      </ng-container>
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>机场名称</th>
+        <td mat-cell *matCellDef="let airport">{{airport.name}}</td>
+      </ng-container>
+      <ng-container matColumnDef="city">
+        <th mat-header-cell *matHeaderCellDef>城市</th>
+        <td mat-cell *matCellDef="let airport">{{airport.city}}</td>
+      </ng-container>
+      <ng-container matColumnDef="country">
+        <th mat-header-cell *matHeaderCellDef>国家</th>
+        <td mat-cell *matCellDef="let airport">{{airport.country}}</td>
+      </ng-container>
+      <ng-container matColumnDef="icao">
+        <th mat-header-cell *matHeaderCellDef>4字码</th>
+        <td mat-cell *matCellDef="let airport">{{airport.icao}}</td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="AirportColumns"></tr>
+      <tr mat-row *matRowDef="let airport; columns: AirportColumns"></tr>
+    </table>
+  </div>
+  <mat-paginator [length]="60" [pageSize]="30"></mat-paginator>
+
+</div>

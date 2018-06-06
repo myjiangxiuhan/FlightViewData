@@ -22,7 +22,7 @@ namespace Services.Impl
 
         public async Task<int> DataUpdataAsync()
         {
-            _context.RemoveRange( await _context.Airports.ToArrayAsync());
+            _context.RemoveRange(await _context.Airports.ToArrayAsync());
             WebClient wc = new WebClient();
             List<Airport> airports = new List<Airport>();
             string datas = await wc.DownloadStringTaskAsync(
@@ -38,7 +38,7 @@ namespace Services.Impl
                         Id = ss[0].Contains(@"\N") ? 0 : Convert.ToInt32(ss[0]),
                         Name = ss[1].Contains(@"\N") ? null : ss[1],
                         City = ss[2].Contains(@"\N") ? null : ss[2],
-                        Couutry = ss[3].Contains(@"\N") ? null : ss[3],
+                        Country = ss[3].Contains(@"\N") ? null : ss[3],
                         Iata = ss[4].Contains(@"\N") ? null : ss[4],
                         Icao = ss[5].Contains(@"\N") ? null : ss[5],
                         Latitude = ss[6].Contains(@"\N") ? (double?) null : Convert.ToDouble(ss[6]),
@@ -62,11 +62,41 @@ namespace Services.Impl
             return await _context.Airports.ToListAsync();
         }
 
+        /// <summary>
+        ///  (异步) 获取机场信息。
+        /// </summary>
+        /// <param name="pageSize">分页大小。</param>
+        /// <param name="pageIndex">分页索引。</param>
+        /// <param name="sort">排序</param>
+        /// <param name="filter">搜索关键字</param>
+        /// <returns>机场集合</returns>
+        public async Task<IEnumerable<Airport>> ListAsync(int pageSize, int pageIndex = 1, string sort = null,
+            string filter = null)
+        {
+            IQueryable<Airport> queryable = _context.Airports;
+            if (!string.IsNullOrEmpty(filter))
+                queryable = queryable.Where(airport =>
+                    EF.Functions.Like(airport.Name, $"%{filter}%") || EF.Functions.Like(airport.City, $"%{filter}%") ||
+                    EF.Functions.Like(airport.Country, $"%{filter}%"));
+            switch (sort)
+            {
+                case "id":
+                    queryable = queryable.OrderBy(airport => airport.Id);
+                    break;
+                case "id_desc":
+                    queryable = queryable.OrderByDescending(airport => airport.Id);
+                    break;
+            }
+
+            return await queryable.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToListAsync();
+
+        }
+
         public async Task<IEnumerable<Airport>> SelectAsync(Expression<Func<Airport, bool>> predicate)
         {
             return await _context.Airports.Where(predicate).ToListAsync();
         }
-        
+
         public async Task<Airport> SelectFirstAsync(Expression<Func<Airport, bool>> predicate)
         {
             return await _context.Airports.FirstAsync(predicate);
