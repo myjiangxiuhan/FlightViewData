@@ -1,6 +1,6 @@
 ﻿namespace Models
 {
-    public class Airport
+    public class AirportStatustucs
     {
         
     }
